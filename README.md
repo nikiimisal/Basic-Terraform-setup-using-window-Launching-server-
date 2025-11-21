@@ -193,7 +193,7 @@ Note: Use the correct AMI for your region.<br>
 |--------------------------------|------------------------------------|
 | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20142555.png?raw=true) | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20142820.png?raw=true) |
 
-| **Launch multiple instances with different names**    | **Launch multiple instances with numbering**          |
+| **Launch single instances**    | **Launch multiple instances with different names**          |
 |--------------------------------|------------------------------------|
 | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130609.png?raw=true) | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20143326.png?raw=true) |
 
