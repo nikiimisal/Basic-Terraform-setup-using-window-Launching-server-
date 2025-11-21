@@ -1,5 +1,7 @@
 # Launching an EC2 Instance Using Terraform on Windows (Updated Full Guide)
-
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/terra-window-ec2.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ## 1. Launch an EC2 Instance Manually (For Understanding Only)
@@ -25,6 +27,10 @@ sudo hostnamectl hostname terraform
 
 Terraform does NOT need this, but it helps you identify your server.
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20051351.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 ---
 
 ## 2. Install Terraform on Windows
@@ -34,6 +40,11 @@ Terraform does NOT need this, but it helps you identify your server.
 3. Unzip it  
 4. Select the folder where you want to keep `Terraform`  
 5. If Terraform shows errors during installation, set the PATH manually:
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20221133.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 
 Press:
 ```
@@ -53,7 +64,12 @@ Go to:
 - Add the folder path where Terraform is located
 - Save
 
-After adding PATH, open PowerShell as Administrator:
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20221252.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+After adding PATH, open PowerShell as Administrator:<br>
+To conform installing was succesfully .
 
 ```
 terraform --version
@@ -91,6 +107,9 @@ AdministratorAccess
 4. Choose option: **Command Line Interface (CLI)**  
 5. Confirm and download the keys
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20221612.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ## 5. Configure AWS Credentials in Windows
@@ -107,6 +126,9 @@ Enter:
 - Region (Example: ap-south-1)  
 - Output format:   
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20125007.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ## 6. Create Your Terraform Project (Using VS Code)
@@ -123,9 +145,10 @@ ec2.tf
 
 Inside, you will write the Terraform code.
 
-Basic reference code or any other info related to ec2 launch can be found by searching:
+Basic reference code or any other info related to ec2 launch can be found by searching:<br>
 
-  terraform aws ec2  [click here](https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest)or[click here](https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/instance)
+  terraform aws ec2      ........in browser.<br>
+   [click here](https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest)or[click here](https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/instance)
 
 on the official Terraform site.
 
@@ -150,7 +173,21 @@ resource "aws_instance" "demo" {
 }
 ```
 
-Note: Use the correct AMI for your region.
+
+Note: Use the correct AMI for your region.<br>
+<br>
+
+>here is some basic code screenshot of launching instance
+
+| **VS screenshot**    | **AWS output screenshot**          |
+|--------------------------------|------------------------------------|
+| ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130609.png?raw=true) | ![AWS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130636.png?raw=true) |
+
+<br>
+###  Here are some examples. Before writing large programs, it’s helpful to practice with small, simple code snippets. I’ve included a few screenshots containing short sample functions
+
+
+
 
 ---
 
