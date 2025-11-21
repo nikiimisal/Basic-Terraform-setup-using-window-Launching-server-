@@ -133,7 +133,7 @@ Enter:
 
 ## 6. Create Your Terraform Project (Using VS Code)
 
-1. Create a folder:
+1. Create a folder:(in your pc)
 ```
 terraform-ec2
 ```
@@ -184,10 +184,22 @@ Note: Use the correct AMI for your region.<br>
 | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130609.png?raw=true) | ![AWS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130636.png?raw=true) |
 
 <br>
-###  Here are some examples. Before writing large programs, it’s helpful to practice with small, simple code snippets. I’ve included a few screenshots containing short sample functions
+<h4> Here are some examples. Before writing large programs, it’s helpful to practice with small, simple code snippets. I’ve included a few screenshots containing short sample functions</h4>
 
+>>>>If you need the Terraform (.tf) code for any of the points shown in the screenshots below, I have already provided it. Simply search for the code based on each point and copy–paste it. However, the best approach is to type the code yourself — it helps with both practice and understanding of the concepts.<br>
+[click here](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/terraform-code's-file.tf)
 
+| **If you want to launch multiple instances at once…**    | **Launch multiple instances with numbering**          |
+|--------------------------------|------------------------------------|
+| ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20142555.png?raw=true) | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20142820.png?raw=true) |
 
+| **Launch multiple instances with different names**    | **Launch multiple instances with numbering**          |
+|--------------------------------|------------------------------------|
+| ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130609.png?raw=true) | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20143326.png?raw=true) |
+
+| **Launch instances with creating key**    | **Launch instances with security group**          |
+|--------------------------------|------------------------------------|
+| ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20053422.png?raw=true) | ![VS](https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20054253.png?raw=true) |
 
 ---
 
@@ -201,6 +213,10 @@ terraform init
 ```
 Run only **one time**, unless you change the provider.
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20123832.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 ### Step 2: Terraform Plan (Blueprint)
 ```
 terraform plan
@@ -210,7 +226,7 @@ This shows what resources Terraform will create.
 
 ### Step 3: Terraform Apply (Create EC2)
 ```
-terraform apply
+terraform apply -auto-approve
 ```
 
 Terraform will ask:
@@ -225,6 +241,19 @@ yes
 
 Your EC2 instance will now be launched successfully.
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-19%20130609.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+### Step 4: Terraform Destroy  (if you wan delete the instanse)
+
+```
+terraform destroy
+```
+
+<p align="center">
+  <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/Screenshot%202025-11-20%20213029.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ## 9. Confirm the EC2 Launch
