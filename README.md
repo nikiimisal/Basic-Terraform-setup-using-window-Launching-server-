@@ -1,4 +1,7 @@
 # Launching an EC2 Instance Using Terraform on Windows (Updated Full Guide)
+
+>This repo uses hard-coded values in code to explain the concept. For real projects, dynamic assignment is the right approach .I created a separate repository only to explain this concept .<br>
+[check repo](https://github.com/nikiimisal/Variable--Dynamic-assigment--Terraform) 
  <p align="center">
   <img src="https://github.com/nikiimisal/Basic-Terraform-setup-using-window-Launching-server-/blob/main/img/terra-window-ec2.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
